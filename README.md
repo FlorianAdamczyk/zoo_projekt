@@ -4,4 +4,4 @@ In that University course we have a weekly homework to devellop our website for 
 In the second Task we made progress with Images.
 
 The site is live at:
-zooprojekt.netlify.app
+[zooprojekt.netlify.app](http://zooprojekt.netlify.app)
