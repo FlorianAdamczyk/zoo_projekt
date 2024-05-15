@@ -1,21 +1,61 @@
-<!DOCTYPE html>
-<html lang=de>
-<head>
-	<title>CSS</title>
-	<meta charset=utf-8>
-	<style>
-   .pos    {background-color:#B2B2B2;}
-	#einzel {font-family: Impact, Charcoal, sans-serif;}
-	#einzel {color: #444343;}
-    body {}
-	h1 { color: blue; }
-    h2 { color: lightgreen; }
-    h3 { color: cyan; }
-    h4 { color: fuchsia; } 
-  </style>
-</head>
+h1 {
+  color: #22c1c3;
+}
 
-<body>
-</body>
+h2 {
+  color: #77e986;
+}
 
-</html>
+h3 {
+  color: #58ffc7;
+}
+
+h4 {
+  color: #fdbb2d;
+}
+
+#impressum_paragraph {
+  background-color: #202020;
+  color: #c0c0c0;
+  font-family: sans-serif;
+}
+
+.animal_description {
+  font-style: italic;
+
+  /* hier wird die Kursivschrift festgelegt */
+  em {
+    font-style: normal;
+  }
+
+  /*hier wird die Kursivschrift wieder aufgehoben*/
+  b {
+    /* ich weiß, das ist nicht die Aufgabe, aber ich möchte nicht, dass meine Unterschrift kursiv ist! */
+    font-style: normal;
+  }
+
+}
+
+body {
+  /* I love Dark Mode!  Ich weiß, das ist auch nicht die Aufgabe, aber lasst uns doch spaß am Website designen! ;) */
+  font-family: sans-serif;
+  background-color: #0000005d;
+  color: #000000;
+  max-width: 1300px;
+  /* align text to the center */
+  text-align: justify;
+  margin: 0 auto;
+
+  tr {
+    background-color: #1f1f1f46;
+    text-align: center;
+    max-width: 1000px;
+  }
+
+}
+
+html {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+}
+
