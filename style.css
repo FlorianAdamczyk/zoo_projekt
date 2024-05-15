@@ -15,7 +15,7 @@ h4 {
 }
 
 #impressum_paragraph {
-  background-color: #202020;
+  background-color: #202020f1;
   color: #c0c0c0;
   font-family: sans-serif;
 }
@@ -24,20 +24,21 @@ h4 {
   font-style: italic;
 
   /* hier wird die Kursivschrift festgelegt */
-  em {
-    font-style: normal;
-  }
-
-  /*hier wird die Kursivschrift wieder aufgehoben*/
-  b {
-    /* ich weiß, das ist nicht die Aufgabe, aber ich möchte nicht, dass meine Unterschrift kursiv ist! */
-    font-style: normal;
-  }
-
 }
 
+.animal_description em {
+  font-style: normal;
+}
+
+.animal_description b {
+  /* ich weiß, das ist nicht die Aufgabe, aber ich möchte nicht, dass meine Unterschrift kursiv ist! */
+  font-style: normal;
+}
+
+/*hier wird die Kursivschrift wieder aufgehoben*/
+
 body {
-  /* I love Dark Mode!  Ich weiß, das ist auch nicht die Aufgabe, aber lasst uns doch spaß am Website designen! ;) */
+  /* Ich weiß, das ist auch nicht die Aufgabe, aber lasst uns doch spaß am Website designen! ;) */
   font-family: sans-serif;
   background-color: #0000005d;
   color: #000000;
@@ -46,16 +47,16 @@ body {
   text-align: justify;
   margin: 0 auto;
 
-  tr {
-    background-color: #1f1f1f46;
-    text-align: center;
-    max-width: 1000px;
-  }
+}
 
+body tr {
+  background-color: #1f1f1f46;
+  text-align: center;
+  max-width: 1000px;
 }
 
 html {
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+  /*Farbiger Hintergrund - Yeay!!! */
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
-
