@@ -5,19 +5,22 @@
   <title> Zoo Zarathustra </title>
   <meta charset=utf-8>
   <link href="style.css" rel="stylesheet">
+  <link href="style_1.css" rel="stylesheet">
 </head>
 
 <body>
   <link href="style.css" rel="stylesheet">
+  <link href="style_1.css" rel="stylesheet">
   <h1>Gästebuch</h1>
   <form name="Gästebuch" action="gb-schreiben.php" method="post">
     <h2>Bitte tragen Sie sich in unserer Gästebuch ein!</h2>
     <p></p>
+	<p id="name01">
     <label for="name">
       Ihr Name:
     </label>
     <input type=text id="name" required><i>(Dieses Feld muss ausgefüllt werden.)</i>
-    <p></p>
+   <p></p>
     In welchem Land leben Sie? <select name="Land">
       <option value=1>Deutschland</option>
       <option value=2>Österreich</option>
@@ -25,6 +28,7 @@
       <option value=4>woanders</option>
     </select>
     <p></p>
+	<p id="plz">
     Die Postleitzahl Ihres Wohnortes, falls Sie in Deutschland leben:<br>
     <input type=text pattern="[0-9]{5}">
     <p></p>
