@@ -14,65 +14,63 @@
   <h1>Gästebuch</h1>
   <form name="Gästebuch" action="gb-schreiben.php" method="post">
     <h2>Bitte tragen Sie sich in unserer Gästebuch ein!</h2>
-    <p></p>
-	<p id="name01">
-    <label for="name">
-      Ihr Name:
-    </label>
-    <input type=text id="name" required><i>(Dieses Feld muss ausgefüllt werden.)</i>
-   <p></p>
-    In welchem Land leben Sie? <select name="Land">
-      <option value=1>Deutschland</option>
-      <option value=2>Österreich</option>
-      <option value=3>Schweiz</option>
-      <option value=4>woanders</option>
-    </select>
-    <p></p>
-	<p id="plz">
-    Die Postleitzahl Ihres Wohnortes, falls Sie in Deutschland leben:<br>
-    <input type=text pattern="[0-9]{5}">
-    <p></p>
-    Wann waren Sie zuletzt in unserem Zoo?
-    <input type=date min="2024-01-01" max="2024-05-03">
-    <p></p>
-    Wie hat es Ihnen gefallen?<br>
-    <input type=radio name=auswertung value=g id=gn>
-    <label for=gn>gar nicht</label>&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type=radio name=auswertung value=m id=mi>
-    <label for=mi>mittelmäßig</label>&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type=radio name=auswertung value=s id=su>
-    <label for=su>super</label>&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type=radio name=auswertung value=i id=ien checked>
-    <label for=ien>ich erinnere mich nicht</label><br><br>
-    <p></p>
-    Was hätten Sie gern im Zoo?<br>
-    <input type=checkbox name=wünsche value=A id=aq checked>
-    <label for=aq>Aquarium</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <p id="name01">
+      <label for="name">
+        Ihr Name:
+      </label>
+      <input type=text id="name" required><i>(Dieses Feld muss ausgefüllt werden.)</i>
+      <br><br>
+      In welchem Land leben Sie? <select name="Land">
+        <option value=1>Deutschland</option>
+        <option value=2>Österreich</option>
+        <option value=3>Schweiz</option>
+        <option value=4>woanders</option>
+      </select>
+    <p id="plz">
+      Die Postleitzahl Ihres Wohnortes, falls Sie in Deutschland leben:<br>
+      <input type=text pattern="[0-9]{5}">
+      <br>
+      Wann waren Sie zuletzt in unserem Zoo?
+      <input type=date min="2024-01-01" max="2024-05-03">
+      <br><br>
+      Wie hat es Ihnen gefallen?<br>
+      <input type=radio name=auswertung value=g id=gn>
+      <label for=gn>gar nicht</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type=radio name=auswertung value=m id=mi>
+      <label for=mi>mittelmäßig</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type=radio name=auswertung value=s id=su>
+      <label for=su>super</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type=radio name=auswertung value=i id=ien checked>
+      <label for=ien>ich erinnere mich nicht</label><br><br>
+      <br>
+      Was hätten Sie gern im Zoo?<br>
+      <input type=checkbox name=wünsche value=A id=aq checked>
+      <label for=aq>Aquarium</label>&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <input type=checkbox name=wünsche value=S id=st checked>
-    <label for=st>Streichelgehege</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type=checkbox name=wünsche value=S id=st checked>
+      <label for=st>Streichelgehege</label>&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <input type=checkbox name=wünsche value=K id=ko checked>
-    <label for=ko>Koalas</label><br><br>
-    <p></p>
-    Was möchten Sie uns noch mitteilen?<br>
-    <textarea cols=70 rows=6 maxlength=400 placeholder="Bitte schreiben Sie hier eine freundliche Nachricht hinein!">
+      <input type=checkbox name=wünsche value=K id=ko checked>
+      <label for=ko>Koalas</label><br><br>
+      <br>
+      Was möchten Sie uns noch mitteilen?<br>
+      <textarea cols=70 rows=6 maxlength=400 placeholder="Bitte schreiben Sie hier eine freundliche Nachricht hinein!">
 </textarea><br><br>
-    <button>Absenden</button>
+      <button>Absenden</button>
   </form>
   <br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br>
 
   <h4> Impressum </h4>
-	<p id="impressum_paragraph">
-		<a id="impressum_link">
-			<i> <b>coded by: </b> Justin Iglhaut, Iryna Korchynska, Florian Adamczyk </i> <br> <br>
-		</a>
-		Hosted on Netlify: <a href="https://zooprojekt.netlify.app/"> zooprojekt.netlify.app </a> <br>
-		Managed on Github: <a href="https://github.com/FlorianAdamczyk/zoo_projekt">
-			github.com/FlorianAdamczyk/zoo_projekt </a> <br>
-		<br> &copy; <b>2024</b>
-	</p> <!-- Impressum paragraph end -->
+  <p id="impressum_paragraph">
+    <a id="impressum_link">
+      <i> <b>coded by: </b> Justin Iglhaut, Iryna Korchynska, Florian Adamczyk </i> <br> <br>
+    </a>
+    Hosted on Netlify: <a href="https://zooprojekt.netlify.app/"> zooprojekt.netlify.app </a> <br>
+    Managed on Github: <a href="https://github.com/FlorianAdamczyk/zoo_projekt">
+      github.com/FlorianAdamczyk/zoo_projekt </a> <br>
+    <br> &copy; <b>2024</b>
+  </p> <!-- Impressum paragraph end -->
 
 </body>
 
