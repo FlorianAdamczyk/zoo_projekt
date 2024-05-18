@@ -1,3 +1,4 @@
+/* horizontale quicklinks auf der startseite */
 .startlink {
     float: left;
     margin-right: 50px;
@@ -6,10 +7,13 @@
     /*  */
 }
 
+/* den flow clearen */
 #DivForclearflow {
     clear: both;
 }
 
+
+/* Centering tables */
 .mi {
     display: flex;
     justify-content: center;
