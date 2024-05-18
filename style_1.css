@@ -15,6 +15,7 @@ input[type=text]:invalid {
 
 #toclist a:link {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.973);
 }
 
 /* Das ist nicht geforderet, aber pers. präferenz */

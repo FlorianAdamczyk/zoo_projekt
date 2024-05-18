@@ -1,0 +1,12 @@
+
+.startlink {
+    float: left;
+    margin-right: 50px;
+    border: 1px solid blue;
+    padding: 3px;
+    /*  */
+}
+
+#DivForclearflow {
+    clear: both;
+}
