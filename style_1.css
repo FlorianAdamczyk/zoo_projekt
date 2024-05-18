@@ -1,4 +1,4 @@
-/*Aufgabe 1 */
+/* Gaestebuch eingabefelder */
 input[type=text]:valid {
   background-color: #c8ffc8;
 }
@@ -7,9 +7,10 @@ input[type=text]:invalid {
   background-color: #ffc8c8;
 }
 
-/*Aufgabe 2 */
+/* LIste mit Verweisen */
 #toclist {
   list-style: none;
+
 }
 
 #toclist a:link {
@@ -21,7 +22,7 @@ input[type=text]:invalid {
   color: rgba(0, 0, 0, 0.973);
 }
 
-/*Aufgabe 3 */
+/* Tabellen auf Hauptseite */
 .MainPageTable,
 th,
 td {
