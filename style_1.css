@@ -1,11 +1,20 @@
 input[type=text]:valid {
-    background-color: #c8ffc8;
-  }
-  input[type=text]:invalid {
-    background-color: #ffc8c8;
-  }
-  
-#liste
- a { text-decoration: none; }
- a:link { text-decoration: none; }
- ul { list-style: none }
+  background-color: #c8ffc8;
+}
+
+input[type=text]:invalid {
+  background-color: #ffc8c8;
+}
+
+#toclist {
+  list-style: none;
+}
+
+#toclist a:link {
+  text-decoration: none;
+}
+
+/* Das ist nicht geforderet, aber pers. präferenz */
+#toclist a:visited {
+  color: rgba(0, 0, 0, 0.973);
+}
