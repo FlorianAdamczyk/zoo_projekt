@@ -1,6 +1,7 @@
-#name01
-  input:required { background-color: #c8ffc8; }
-  input:invalid { background-color: #ffc8c8; }
-#plz
-  input:valid { background-color: #c8ffc8; }
-  input:invalid { background-color: #ffc8c8; }
+input[type=text]:valid {
+    background-color: #c8ffc8;
+  }
+
+  input[type=text]:invalid {
+    background-color: #ffc8c8;
+  }
