@@ -1,8 +1,6 @@
-<style>
 #name01
   input:required { background-color: #c8ffc8; }
   input:invalid { background-color: #ffc8c8; }
 #plz
   input:valid { background-color: #c8ffc8; }
   input:invalid { background-color: #ffc8c8; }
-  </style>
