@@ -1,7 +1,11 @@
 input[type=text]:valid {
     background-color: #c8ffc8;
   }
-
   input[type=text]:invalid {
     background-color: #ffc8c8;
   }
+  
+#liste
+ a { text-decoration: none; }
+ a:link { text-decoration: none; }
+ ul { list-style: none }
