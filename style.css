@@ -1,36 +1,38 @@
 h1 {
-  color: #22c1c3;
+  color: #240750;
 }
 
 h2 {
-  color: #77e986;
+  color: #344C64;
 }
 
 h3 {
-  color: #58ffc7;
+  color: #577B8D;
 }
 
 h4 {
-  color: #fdbb2d;
+  color: #666666;
 }
 
 #impressum_paragraph {
-  background-color: #202020f1;
-  color: #7e7e7e;
+  background-color: #828282;
+  color: #D1D1D1;
   font-family: sans-serif;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-.animal_description {
+.animal_description_text {
   font-style: italic;
 
   /* hier wird die Kursivschrift festgelegt */
 }
 
-.animal_description em {
+.animal_description_text em {
   font-style: normal;
 }
 
-.animal_description b {
+.animal_description_text b {
   /* ich weiß, das ist nicht die Aufgabe, aber ich möchte nicht, dass meine Unterschrift kursiv ist! */
   font-style: normal;
 }
@@ -38,24 +40,92 @@ h4 {
 /*hier wird die Kursivschrift wieder aufgehoben*/
 
 body {
-  /* Ich weiß, das ist auch nicht die Aufgabe, aber lasst uns doch spaß am Website designen! ;) */
-  font-family: sans-serif;
-  background-color: #0000005d;
-  color: #000000;
-  max-width: 1300px;
-  /* align text to the center */
-  text-align: justify;
-  margin: 0 auto;
-
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-color: #f2f2f2;
+	color: #000000;
+	/* max-width: 1300px; */
+	text-align: left;
+	margin-top: 40px;
+	margin-right: 200px;
+	margin-left: 86px;
+	margin-bottom: 40px;
+	padding: 40px;
+	border-radius: 40px;
 }
 
-body tr {
-  background-color: #1f1f1f46;
+
+
+html {
+  background: #324040;
+}
+
+table {
+  background-color: #B2C5CF;
   text-align: center;
 }
 
-html {
-  /*Farbiger Hintergrund - Yeay!!! */
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+.animal_description_table {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.animal_description_table td {
+	padding-right: 20px;	
+}
+
+/* Tabellen auf Hauptseite */
+.MainPageTable, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding-left: 5px;
+	caption-side: bottom;
+	padding-right: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.MainPageTable td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding-left: 5px;
+	caption-side: bottom;
+	padding-right: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.MainPageTable tr:hover {
+  background-color: lightblue;
+}
+
+.MainPageTable thead {
+  background-color: #6A8FA3;
+  height: 30px;
+}
+
+/* Gaestebuch eingabefelder */
+input[type=text]:valid {
+  background-color: #c8ffc8;
+}
+
+input[type=text]:invalid {
+  background-color: #ffc8c8;
+}
+
+/* Liste mit Verweisen */
+#toclist {
+  list-style: none;
+}
+#toclist a:link {
+  text-decoration: none;
+  color: #060404;
+}
+#toclist a:visited {
+  color: #000000;
+}
+
+#lageplan {
+	align-content: center;
+	float: none;
+	clear: none;
 }

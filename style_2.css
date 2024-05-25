@@ -4,14 +4,12 @@
     margin-right: 50px;
     border: 1px solid blue;
     padding: 3px;
-    /*  */
 }
 
 /* den flow clearen */
 #DivForclearflow {
     clear: both;
 }
-
 
 /* Centering tables */
 .mi {
