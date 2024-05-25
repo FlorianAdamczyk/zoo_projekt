@@ -4,6 +4,7 @@
     margin-right: 50px;
     border: 1px solid blue;
     padding: 3px;
+    border-radius: 6px; /* abgerundete Ecken machen es deutlich schöner!*/
 }
 
 /* den flow clearen */
