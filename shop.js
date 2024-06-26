@@ -35,4 +35,28 @@
         c[i].innerHTML = preis;
     };
 
+// Aufgabe a3_3: Gesamtpreis berechnen:
+// Hinzufügen des 'change'-EventListeners zu allen Eingabefeldern
+a.forEach((eingabefeld) => {
+    eingabefeld.addEventListener('change', eingabeGeaendert);
+});
     
+// Funktion, die aufgerufen wird, wenn sich der Wert eines Eingabefeldes ändert
+
+function eingabeGeaendert(event) {
+    // hier wird der Preis mit der zahl aus dem eingabefeld multipliziert und dann werden alle preise aufsummiert
+    var gesamtpreis = 0;
+    for (i = 0; i < a.length; i++) {
+        gesamtpreis += a[i].value * preise[i];
+    }
+    // hier wird der gesamtpreis in ein currency-format umgewandelt
+    gesamtpreis = (gesamtpreis / 100).toLocaleString("de-DE", {
+        style: "currency",
+        currency: "EUR",
+    })
+    // hier wird der gesamtpreis in das html-element mit der id "gesamtpreis" geschrieben
+    document.getElementById("gesamtpreis").innerHTML = gesamtpreis;
+}
+
+
+
