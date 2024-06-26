@@ -1,31 +1,38 @@
-// Eingabefelder abrufen
-const inputFields = document.querySelectorAll('input[type="number"]');
+//Hier fängt die Aufgabe an, der Rest der Seite entspricht der Vorlage
 
-// Standardwert, Minimalwert, Maximalwert und Größe für jedes Eingabefeld festlegen
-inputFields.forEach((input) => {
-    input.value = 0;
-    input.min = 0;
-    input.max = 100;
-    input.size = 3;
-});
+    //erstellt ein Node-Array mit allen HTML-input-objekten der Seite
+    const a = document.querySelectorAll("input");
 
-// Array von Preisen
-const preise = [10, 20, 30, 40, 50];
+    /* 3 forEach()-Funktionen setzen für alle Objekte in a 
+    die in der Aufgabe geforderen Attribute auf die richtigen Werte */ 
+    a.forEach((b) => {
+        b.setAttribute("min", "0");
+    });
 
-// Elemente mit der Klasse "preis" abrufen
-const preisElements = document.querySelectorAll('.preis');
+    a.forEach((b) => {
+        b.setAttribute("max", "100");
+    });
 
-// Die Preise in den Elementen festlegen
-preisElements.forEach((element, index) => {
-    element.textContent = preise[index];
-});
+    a.forEach((b) => {
+        b.setAttribute("size", "3");
+    });
+    //neues Node-Array mit allen HTML-Objekten der Klasse "Preis"
+    const c = document.querySelectorAll(".preis");
 
-// Die Preise in Euro umrechnen und formatieren
-preisElements.forEach((element, index) => {
-    const preisInEuro = preise[index] / 100; // Umrechnung von Cents zu Euro
-    const euro = Math.floor(preisInEuro); // Ganzzahliger Eurobetrag
-    const cent = Math.round((preisInEuro - euro) * 100); // Centbetrag mit zwei Nachkommastellen
-    const formattedPreis = euro.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' }) + ' ' + cent.toString().padStart(2, '0'); // Formatierung als Eurobetrag mit zweistelligem Centbetrag
-    element.textContent = formattedPreis;
-});
+    //Schleife schreibt jeweils Preis in jedes Objekt mit .preis-Klasse 
+    for (i = 0; i < c.length; i++) {
 
+        /*konvertiert alle Preise des Preis-Arrays ins Format einer currency, die Funktion nimmt
+        den Preis in Euro als float und gibt ihn als zu einem Preis in Euro formatierten String aus
+        */
+
+        var preis = (preise[i] / 100).toLocaleString("de-DE", {
+            style: "currency",
+            currency: "EUR",
+        })
+
+        //c besteht nur aus <td>-tags, daher kann diese Funktion verwendet werden um den Preis dort einzutragen
+        c[i].innerHTML = preis;
+    };
+
+    

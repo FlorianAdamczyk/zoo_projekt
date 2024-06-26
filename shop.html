@@ -2,81 +2,82 @@
 <html lang=de>
 
 <head>
-  <title>Zoo Zarathustra</title> <!-- Titel des Shops: hier hab ich eine kleine änderung gemacht. -->
-  <meta charset=utf-8>
-  <link href="style.css" rel="stylesheet"> <!-- Link to the CSS file: das werde ich ja wohl noch hinzufügen dürfen? -->
-  <script src="jquery.min.js"></script>
-  <script>
-    var preise = [595, 1599, 295, 429, 749];
-    var euro, cent;
-  </script>
-  <style>
-    table {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
+	<title>Zoo Zarathustra</title> <!-- Titel des Shops: hier hab ich eine kleine änderung gemacht. -->
+	<meta charset=utf-8>
+	<link href="style.css" rel="stylesheet">
+	<!-- Link to the CSS file: das werde ich ja wohl noch hinzufügen dürfen? -->
+	<script src="jquery.min.js"></script>
+	<script>
+		var preise = [595, 1599, 295, 429, 749];
+		var euro, cent;
+	</script>
+	<style>
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
 
-    td {
-      padding: 5px 10px;
-    }
+		td {
+			padding: 5px 10px;
+		}
 
-    input,
-    td:last-child {
-      text-align: right;
-    }
+		input,
+		td:last-child {
+			text-align: right;
+		}
 
-    tr:last-child td {
-      border: 1px solid black;
-    }
-  </style>
+		tr:last-child td {
+			border: 1px solid black;
+		}
+	</style>
 </head>
 
 <body>
-  <h1>Zoo-Shop</h1>
-  Bestellschein:<br><br>
+	<h1>Zoo-Shop</h1>
+	Bestellschein:<br><br>
 
-  <form>
-    <table>
-      <tr>
-        <th>Anzahl</th>
-        <th>Artikel</th>
-        <th>Preis</th>
-      </tr>
-      <tr>
-        <td><input type=number></td>
-        <td>Tiermemory</td>
-        <td class=preis></td>
-      </tr>
-      <tr>
-        <td><input type=number></td>
-        <td>Maulwurf</td>
-        <td class=preis></td>
-      </tr>
-      <tr>
-        <td><input type=number></td>
-        <td>Mini-Elefant</td>
-        <td class=preis></td>
-      </tr>
-      <tr>
-        <td><input type=number></td>
-        <td>Sonnenblende</td>
-        <td class=preis></td>
-      </tr>
-      <tr>
-        <td><input type=number></td>
-        <td>Sattelschoner</td>
-        <td class=preis></td>
-      </tr>
-      <tr>
-        <td colspan=2>Gesamtpreis:</td>
-        <td id=gesamtpreis>0,00 €</td>
-      </tr>
-    </table>
-  </form>
+	<form>
+		<table>
+			<tr>
+				<th>Anzahl</th>
+				<th>Artikel</th>
+				<th>Preis</th>
+			</tr>
+			<tr>
+				<td><input type=number></td>
+				<td>Tiermemory</td>
+				<td class=preis></td>
+			</tr>
+			<tr>
+				<td><input type=number></td>
+				<td>Maulwurf</td>
+				<td class=preis></td>
+			</tr>
+			<tr>
+				<td><input type=number></td>
+				<td>Mini-Elefant</td>
+				<td class=preis></td>
+			</tr>
+			<tr>
+				<td><input type=number></td>
+				<td>Sonnenblende</td>
+				<td class=preis></td>
+			</tr>
+			<tr>
+				<td><input type=number></td>
+				<td>Sattelschoner</td>
+				<td class=preis></td>
+			</tr>
+			<tr>
+				<td colspan=2>Gesamtpreis:</td>
+				<td id=gesamtpreis>0,00 €</td>
+			</tr>
+		</table>
+	</form>
 
 
-  <!-- Impressum: das ist doch wphl hoffentlich auch okay? -->
-  <br><br><br><br><br><br><br><br>
+	<!-- Impressum: das ist doch wohl hoffentlich auch okay? -->
+	<br><br><br><br><br><br><br><br>
 	<br><br><br><br><br><br><br><br>
 	<br><br><br><br><br><br><br><br>
 	<br><br><br><br><br><br><br><br>
@@ -94,5 +95,8 @@
 	</p> <!-- Impressum paragraph end -->
 
 </body>
+
+<script src="shop.js"></script> <!-- einbinden der JavaScript Datei (neu, hat gefehlt!)-->
+	
 
 </html>
